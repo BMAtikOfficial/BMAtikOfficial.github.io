@@ -1,48 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>B. M. Atik | Official Website</title>
-
-  <meta name="description"
-        content="Official personal website of B. M. Atik. Electrical & Electronics Engineering, research, cybersecurity, artificial intelligence and machine learning.">
-
+  <meta name="description" content="Official personal website of B. M. Atik — Electrical & Electronics Engineering, research, cybersecurity, artificial intelligence and machine learning.">
   <meta name="author" content="B. M. Atik">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b1220">
 
-  <link rel="canonical"
-        href="https://bmatikofficial.github.io/">
+  <link rel="canonical" href="https://bmatikofficial.github.io/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
 
-  <!-- Open Graph -->
-  <meta property="og:title"
-        content="B. M. Atik | Official Website">
+  <link rel="me" href="https://github.com/BMAtikOfficial">
+  <link rel="me" href="https://www.linkedin.com/in/bmatikofficial">
+  <link rel="me" href="https://orcid.org/0009-0001-3877-9721">
 
-  <meta property="og:description"
-        content="Official personal website of B. M. Atik — Electrical & Electronics Engineering, Research, Cybersecurity and AI/ML.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="B. M. Atik | Official Website">
+  <meta property="og:description" content="Electrical & Electronics Engineering · Research · Cybersecurity · AI · Machine Learning">
+  <meta property="og:url" content="https://bmatikofficial.github.io/">
+  <meta property="og:image" content="https://github.com/BMAtikOfficial.png">
+  <meta property="og:site_name" content="B. M. Atik">
 
-  <meta property="og:type"
-        content="profile">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="B. M. Atik | Official Website">
+  <meta name="twitter:description" content="Electrical & Electronics Engineering · Research · Cybersecurity · AI · Machine Learning">
+  <meta name="twitter:image" content="https://github.com/BMAtikOfficial.png">
 
-  <meta property="og:url"
-        content="https://bmatikofficial.github.io/">
-
-  <!-- Google / Schema.org Identity Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
+    "@id": "https://bmatikofficial.github.io/#profile-page",
     "url": "https://bmatikofficial.github.io/",
     "name": "B. M. Atik | Official Website",
+    "description": "Official personal website of B. M. Atik.",
     "mainEntity": {
       "@type": "Person",
+      "@id": "https://bmatikofficial.github.io/#person",
       "name": "B. M. Atik",
-      "alternateName": "@bmatikofficial",
+      "alternateName": "bmatikofficial",
       "url": "https://bmatikofficial.github.io/",
+      "image": "https://github.com/BMAtikOfficial.png",
       "email": "mailto:rajibah2019@gmail.com",
+      "description": "Electrical & Electronics Engineering, research, cybersecurity, artificial intelligence and machine learning.",
+      "knowsAbout": [
+        "Electrical and Electronics Engineering",
+        "Power Systems",
+        "Cybersecurity",
+        "Artificial Intelligence",
+        "Machine Learning"
+      ],
       "sameAs": [
         "https://github.com/BMAtikOfficial",
         "https://www.linkedin.com/in/bmatikofficial",
@@ -58,829 +68,192 @@
     }
   }
   </script>
-
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
-      background: #f8fafc;
-      color: #172033;
-      line-height: 1.7;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1120px, 90%);
-      margin: auto;
-    }
-
-    /* NAVBAR */
-
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid #e7ecf2;
-      z-index: 100;
-    }
-
-    nav {
-      min-height: 76px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #0b2545;
-      letter-spacing: .2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      list-style: none;
-      font-size: .95rem;
-      font-weight: 600;
-    }
-
-    .nav-links a {
-      color: #475569;
-      transition: .2s;
-    }
-
-    .nav-links a:hover {
-      color: #0b66c3;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 78vh;
-
-      display: flex;
-      align-items: center;
-
-      background:
-        radial-gradient(
-          circle at 85% 20%,
-          rgba(38, 132, 255, .10),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 10% 80%,
-          rgba(28, 77, 121, .08),
-          transparent 30%
-        );
-    }
-
-    .hero-content {
-      max-width: 850px;
-      padding: 110px 0;
-    }
-
-    .tag {
-      display: inline-block;
-      color: #0b66c3;
-      background: #eaf4ff;
-
-      padding: 7px 14px;
-      border-radius: 999px;
-
-      font-size: .88rem;
-      font-weight: 700;
-
-      margin-bottom: 22px;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 8vw, 5.8rem);
-      line-height: 1.02;
-      letter-spacing: -3px;
-      color: #0b2545;
-    }
-
-    .username {
-      display: block;
-      margin-top: 10px;
-
-      color: #64748b;
-      font-size: 1.05rem;
-      font-weight: 600;
-    }
-
-    .hero h2 {
-      margin-top: 28px;
-
-      max-width: 820px;
-
-      font-size: clamp(1.25rem, 3vw, 1.8rem);
-      font-weight: 500;
-
-      color: #334155;
-    }
-
-    .hero-text {
-      max-width: 720px;
-
-      margin-top: 23px;
-
-      font-size: 1.08rem;
-      color: #64748b;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-
-      margin-top: 34px;
-    }
-
-    .btn {
-      display: inline-block;
-
-      padding: 12px 21px;
-      border-radius: 9px;
-
-      font-weight: 700;
-      font-size: .95rem;
-
-      transition: .2s;
-    }
-
-    .btn-primary {
-      background: #0b66c3;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #084f97;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      border: 1px solid #d4dce7;
-      background: white;
-      color: #24364b;
-    }
-
-    .btn-secondary:hover {
-      border-color: #0b66c3;
-      color: #0b66c3;
-      transform: translateY(-2px);
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 90px 0;
-    }
-
-    section:nth-of-type(even) {
-      background: white;
-    }
-
-    .section-label {
-      text-transform: uppercase;
-
-      font-size: .8rem;
-      font-weight: 800;
-
-      letter-spacing: 2px;
-      color: #0b66c3;
-
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      color: #0b2545;
-
-      margin-bottom: 22px;
-    }
-
-    .section-text {
-      color: #64748b;
-
-      max-width: 800px;
-
-      font-size: 1.05rem;
-    }
-
-    /* RESEARCH CARDS */
-
-    .cards {
-      margin-top: 40px;
-
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(230px, 1fr));
-
-      gap: 18px;
-    }
-
-    .card {
-      padding: 28px;
-
-      background: white;
-
-      border: 1px solid #e5eaf0;
-      border-radius: 15px;
-
-      box-shadow:
-        0 10px 30px rgba(24, 39, 75, .04);
-
-      transition: .25s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-
-      box-shadow:
-        0 14px 36px rgba(24, 39, 75, .09);
-    }
-
-    .card h3 {
-      color: #16324f;
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #64748b;
-      font-size: .94rem;
-    }
-
-    /* SOCIALS */
-
-    .social-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(190px, 1fr));
-
-      gap: 13px;
-
-      margin-top: 35px;
-    }
-
-    .social-link {
-      padding: 15px 18px;
-
-      border: 1px solid #e1e7ee;
-      border-radius: 10px;
-
-      background: #ffffff;
-
-      font-weight: 700;
-      color: #334155;
-
-      transition: .2s;
-    }
-
-    .social-link:hover {
-      border-color: #0b66c3;
-      color: #0b66c3;
-
-      transform: translateY(-2px);
-    }
-
-    /* CONTACT */
-
-    .contact-box {
-      margin-top: 30px;
-
-      padding: 35px;
-
-      background: #0b2545;
-      color: white;
-
-      border-radius: 18px;
-    }
-
-    .contact-box h3 {
-      font-size: 1.55rem;
-      margin-bottom: 8px;
-    }
-
-    .contact-box p {
-      color: #dbeafe;
-    }
-
-    .contact-box a {
-      display: inline-block;
-
-      margin-top: 18px;
-
-      font-weight: 700;
-      color: white;
-    }
-
-    /* FOOTER */
-
-    footer {
-      border-top: 1px solid #e1e7ee;
-
-      text-align: center;
-
-      padding: 28px 15px;
-
-      color: #64748b;
-      font-size: .9rem;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 760px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-content {
-        padding: 95px 0 80px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-
-    }
-
-  </style>
 </head>
 
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-
-<header>
-
-  <div class="container">
-
-    <nav>
-
-      <a href="#home" class="logo">
-        B. M. Atik
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="B. M. Atik homepage">
+        <span class="brand-mark" aria-hidden="true">BMA</span>
+        <span class="brand-text">B. M. Atik</span>
       </a>
 
-      <ul class="nav-links">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-        <li>
-          <a href="#about">About</a>
-        </li>
-
-        <li>
-          <a href="#research">Research</a>
-        </li>
-
-        <li>
-          <a href="#profiles">Profiles</a>
-        </li>
-
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-</header>
-
-
-<main>
-
-
-  <!-- HERO -->
-
-  <section class="hero" id="home">
-
-    <div class="container">
-
-      <div class="hero-content">
-
-        <span class="tag">
-          Official Personal Website
-        </span>
-
-        <h1>
-          B. M. Atik
-        </h1>
-
-        <span class="username">
-          @bmatikofficial
-        </span>
-
-        <h2>
-          Electrical & Electronics Engineering
-          · Research · Cybersecurity
-          · Artificial Intelligence
-          · Machine Learning
-        </h2>
-
-        <p class="hero-text">
-
-          Welcome to the official personal website of
-          B. M. Atik — a central place for my academic,
-          research, technical and professional identity.
-
-        </p>
-
-        <div class="buttons">
-
-          <a
-            class="btn btn-primary"
-            href="#research">
-
-            Explore Research
-
-          </a>
-
-          <a
-            class="btn btn-secondary"
-            href="https://www.linkedin.com/in/bmatikofficial"
-            target="_blank"
-            rel="noopener noreferrer">
-
-            LinkedIn
-
-          </a>
-
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/BMAtikOfficial"
-            target="_blank"
-            rel="noopener noreferrer">
-
-            GitHub
-
-          </a>
-
-          <a
-            class="btn btn-secondary"
-            href="https://orcid.org/0009-0001-3877-9721"
-            target="_blank"
-            rel="noopener noreferrer">
-
-            ORCID
-
-          </a>
-
-        </div>
-
-      </div>
-
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#focus">Research Focus</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-  </section>
-
-
-  <!-- ABOUT -->
-
-  <section id="about">
-
-    <div class="container">
-
-      <p class="section-label">
-        About
-      </p>
-
-      <h2 class="section-title">
-        About Me
-      </h2>
-
-      <p class="section-text">
-
-        I am B. M. Atik, interested in engineering,
-        scientific research and emerging technologies.
-        My areas of interest include electrical and
-        electronics engineering, power systems,
-        cybersecurity, artificial intelligence
-        and machine learning.
-
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- RESEARCH -->
-
-  <section id="research">
-
-    <div class="container">
-
-      <p class="section-label">
-        Focus
-      </p>
-
-      <h2 class="section-title">
-        Research & Technical Interests
-      </h2>
-
-      <p class="section-text">
-
-        My academic and technical interests span
-        modern electrical systems, intelligent
-        computing and security-focused technologies.
-
-      </p>
-
-
-      <div class="cards">
-
-        <div class="card">
-
-          <h3>
-            Power Systems
-          </h3>
-
-          <p>
-            Analysis, modelling, monitoring and
-            intelligent operation of electrical
-            power systems.
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Official personal website</p>
+          <h1>B. M. Atik</h1>
+          <p class="handle">@bmatikofficial</p>
+          <p class="hero-role">Electrical &amp; Electronics Engineering <span>·</span> Research <span>·</span> Cybersecurity <span>·</span> AI &amp; Machine Learning</p>
+          <p class="hero-summary">
+            A central home for my academic, technical and professional identity, research interests, verified public profiles and contact information.
           </p>
 
+          <div class="hero-actions">
+            <a class="button button-primary" href="#focus">Explore research focus</a>
+            <a class="button button-secondary" href="#profiles">View official profiles</a>
+          </div>
+
+          <div class="identity-strip" aria-label="Identity highlights">
+            <div><strong>B. M. Atik</strong><span>Professional name</span></div>
+            <div><strong>@bmatikofficial</strong><span>Public handle</span></div>
+            <div><strong>0009-0001-3877-9721</strong><span>ORCID</span></div>
+          </div>
         </div>
 
-
-        <div class="card">
-
-          <h3>
-            Cybersecurity
-          </h3>
-
-          <p>
-            Security of cyber-physical and
-            technology-driven systems.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>
-            Artificial Intelligence
-          </h3>
-
-          <p>
-            Intelligent computational approaches
-            for engineering and real-world systems.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>
-            Machine Learning
-          </h3>
-
-          <p>
-            Data-driven modelling, prediction
-            and intelligent decision support.
-          </p>
-
-        </div>
-
+        <aside class="profile-card" aria-label="B. M. Atik profile">
+          <div class="photo-ring">
+            <img src="https://github.com/BMAtikOfficial.png" alt="B. M. Atik" width="360" height="360">
+          </div>
+          <div class="profile-card-body">
+            <p class="profile-kicker">Official profile</p>
+            <h2>B. M. Atik</h2>
+            <p>Engineering · Research · Technology</p>
+            <div class="profile-links">
+              <a href="https://www.linkedin.com/in/bmatikofficial" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/BMAtikOfficial" target="_blank" rel="me noopener noreferrer">GitHub</a>
+              <a href="https://orcid.org/0009-0001-3877-9721" target="_blank" rel="me noopener noreferrer">ORCID</a>
+            </div>
+          </div>
+        </aside>
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-  <!-- ONLINE PROFILES -->
-
-  <section id="profiles">
-
-    <div class="container">
-
-      <p class="section-label">
-        Connect
-      </p>
-
-      <h2 class="section-title">
-        Find Me Online
-      </h2>
-
-      <p class="section-text">
-
-        Official academic, professional and
-        social profiles associated with
-        B. M. Atik / @bmatikofficial.
-
-      </p>
-
-
-      <div class="social-grid">
-
-
-        <a
-          class="social-link"
-          href="https://www.linkedin.com/in/bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          LinkedIn ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://github.com/BMAtikOfficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          GitHub ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://orcid.org/0009-0001-3877-9721"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          ORCID ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://www.facebook.com/bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Facebook ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://x.com/BMAtikOfficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          X ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://youtube.com/@bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          YouTube ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://www.threads.com/@bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Threads ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://www.tiktok.com/@bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          TikTok ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://www.snapchat.com/add/bmatikofficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Snapchat ↗
-
-        </a>
-
-
-        <a
-          class="social-link"
-          href="https://t.me/BMAtikOfficial"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Telegram ↗
-
-        </a>
-
-
+    <section class="section section-white" id="about">
+      <div class="container split">
+        <div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">Engineering, intelligent systems and secure technology.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I am B. M. Atik. My interests span electrical and electronics engineering, power systems, cybersecurity, artificial intelligence and machine learning.
+          </p>
+          <p>
+            This website brings my professional identity and official online profiles together in one place, making it easier to find consistent information about my academic and technical work.
+          </p>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <section class="section" id="focus">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Research focus</p>
+          <h2 class="section-title">Areas I explore</h2>
+          <p class="section-intro">A focused intersection of electrical engineering, intelligent computation and security.</p>
+        </div>
 
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section id="contact">
-
-    <div class="container">
-
-      <p class="section-label">
-        Contact
-      </p>
-
-      <h2 class="section-title">
-        Get in Touch
-      </h2>
-
-      <div class="contact-box">
-
-        <h3>
-          B. M. Atik
-        </h3>
-
-        <p>
-          For professional, academic or
-          research-related communication.
-        </p>
-
-        <a href="mailto:rajibah2019@gmail.com">
-
-          ✉ rajibah2019@gmail.com
-
-        </a>
-
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="card-number">01</span>
+            <h3>Power Systems</h3>
+            <p>Modelling, analysis, monitoring and intelligent operation of modern electrical power systems.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">02</span>
+            <h3>Cybersecurity</h3>
+            <p>Security of connected, cyber-physical and technology-driven systems.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">03</span>
+            <h3>Artificial Intelligence</h3>
+            <p>Intelligent computational methods for engineering problems and real-world decision support.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">04</span>
+            <h3>Machine Learning</h3>
+            <p>Data-driven modelling, prediction and pattern discovery for practical technical applications.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
+    <section class="section section-white" id="profiles">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Official profiles</p>
+          <h2 class="section-title">Find me online</h2>
+          <p class="section-intro">Public profiles associated with B. M. Atik and the handle @bmatikofficial.</p>
+        </div>
+
+        <div class="profile-grid">
+          <a class="profile-link featured" href="https://www.linkedin.com/in/bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>LinkedIn</strong><small>Professional profile</small></span><b>↗</b>
+          </a>
+          <a class="profile-link featured" href="https://github.com/BMAtikOfficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>GitHub</strong><small>@BMAtikOfficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link featured" href="https://orcid.org/0009-0001-3877-9721" target="_blank" rel="me noopener noreferrer">
+            <span><strong>ORCID</strong><small>0009-0001-3877-9721</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://www.facebook.com/bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>Facebook</strong><small>@bmatikofficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://x.com/BMAtikOfficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>X</strong><small>@BMAtikOfficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://youtube.com/@bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>YouTube</strong><small>@bmatikofficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://www.threads.com/@bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>Threads</strong><small>@bmatikofficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://www.tiktok.com/@bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>TikTok</strong><small>@bmatikofficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://www.snapchat.com/add/bmatikofficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>Snapchat</strong><small>@bmatikofficial</small></span><b>↗</b>
+          </a>
+          <a class="profile-link" href="https://t.me/BMAtikOfficial" target="_blank" rel="me noopener noreferrer">
+            <span><strong>Telegram</strong><small>@BMAtikOfficial</small></span><b>↗</b>
+          </a>
+        </div>
+
+        <p class="profile-note">Google Scholar, IEEE, ResearchGate and other academic profiles can be added once their exact public profile URLs are available.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <p class="section-label section-label-light">Contact</p>
+            <h2>Professional &amp; academic communication</h2>
+            <p>For research, academic or professional communication, email me directly.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:rajibah2019@gmail.com">rajibah2019@gmail.com</a>
+            <a class="button button-outline-light" href="https://www.linkedin.com/in/bmatikofficial" target="_blank" rel="me noopener noreferrer">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> B. M. Atik. All rights reserved.</p>
+      <p><a href="https://bmatikofficial.github.io/">bmatikofficial.github.io</a></p>
     </div>
+  </footer>
 
-  </section>
-
-
-</main>
-
-
-<footer>
-
-  © 2026 B. M. Atik · @bmatikofficial
-  · All Rights Reserved
-
-</footer>
-
-
+  <script src="/script.js"></script>
 </body>
 </html>
