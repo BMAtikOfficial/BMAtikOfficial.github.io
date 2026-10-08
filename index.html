@@ -323,25 +323,39 @@
           <p class="section-intro">A popular video from the official @bmatikofficial YouTube channel.</p>
         </div>
 
-        <a class="featured-video-card" href="https://youtube.com/shorts/Rm1Cn5S_CCE?si=95N-HQ_yxotD4mRh" target="_blank" rel="noopener noreferrer" aria-label="Watch featured YouTube Short">
-          <div class="featured-video-thumb">
-            <img
-              src="https://i.ytimg.com/vi/Rm1Cn5S_CCE/hqdefault.jpg"
-              alt="Thumbnail for a featured YouTube Short by B. M. Atik"
-              loading="lazy"
-              width="480"
-              height="360"
-            >
-            <span class="play-button" aria-hidden="true">▶</span>
-            <span class="youtube-badge">YouTube Shorts</span>
+        <div class="custom-video-player">
+          <button
+            id="play-featured-video"
+            class="video-poster"
+            type="button"
+            aria-label="Play featured YouTube Short"
+          >
+            <div class="video-poster-content">
+              <span class="video-chip">Official YouTube Short</span>
+              <p class="video-poster-handle">@bmatikofficial</p>
+              <h3>Featured YouTube Short</h3>
+              <p class="video-poster-text">
+                Watch this featured video directly on the official B. M. Atik website.
+              </p>
+
+              <div class="video-poster-bottom">
+                <span class="video-channel">YouTube · @bmatikofficial</span>
+                <span class="video-play-btn" aria-hidden="true">▶</span>
+              </div>
+            </div>
+          </button>
+
+          <div id="featured-video-frame" class="video-frame-wrap" hidden>
+            <iframe
+              id="featured-video-iframe"
+              src=""
+              title="Featured YouTube Short by B. M. Atik"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
           </div>
-          <div class="featured-video-copy">
-            <p class="featured-video-kicker">@bmatikofficial</p>
-            <h3>Featured YouTube Short</h3>
-            <p>Watch this featured video on the official B. M. Atik YouTube channel.</p>
-            <span class="featured-video-cta">Watch on YouTube ↗</span>
-          </div>
-        </a>
+        </div>
       </div>
     </section>
 
