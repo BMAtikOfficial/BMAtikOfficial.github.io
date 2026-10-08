@@ -21,3 +21,16 @@ const year = document.querySelector("#year");
 if (year) {
   year.textContent = new Date().getFullYear();
 }
+
+const playFeaturedVideoButton = document.querySelector("#play-featured-video");
+const featuredVideoFrame = document.querySelector("#featured-video-frame");
+const featuredVideoIframe = document.querySelector("#featured-video-iframe");
+
+if (playFeaturedVideoButton && featuredVideoFrame && featuredVideoIframe) {
+  playFeaturedVideoButton.addEventListener("click", () => {
+    featuredVideoIframe.src =
+      "https://www.youtube.com/embed/Rm1Cn5S_CCE?autoplay=1&rel=0&playsinline=1";
+    featuredVideoFrame.hidden = false;
+    playFeaturedVideoButton.hidden = true;
+  });
+}
