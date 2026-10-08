@@ -6,17 +6,17 @@ Live site: https://bmatikofficial.github.io/
 
 ## Current content
 
+- Dedicated biography/about page for identity and search visibility
 - Professional profile and verified public identity links
 - Academic affiliation: Department of Electrical and Electronic Engineering, Leading University
 - Research interests
-- Selected research projects
-- Research-output section
 - Web CV with print / save-as-PDF support
 - Structured identity data for search engines
 
 ## Site files
 
 - `index.html` — main website and structured identity data
+- `about.html` — biography and professional identity page
 - `style.css` — responsive visual design
 - `script.js` — mobile navigation and small interactions
 - `cv.html` — web CV
